@@ -1,0 +1,18 @@
+import pandas as pd
+
+data = {
+    "Name": ["Rahul","Priya","Amit","Sneha","Rohan",
+             "Pooja","Karan","Neha","Arjun","Anjali"],
+    "Gender": ["Male","Female","Male","Female","Male",
+               "Female","Male","Female","Male","Female"],
+    "Maths": [78,88,67,90,55,76,80,85,72,91],
+    "Science": [85,92,70,95,60,82,78,89,74,94],
+    "English": [80,95,65,93,58,79,84,87,70,96],
+    "Attendance": [90,96,85,98,75,88,91,94,82,99]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("eda_students.csv", index=False)
+
+print("Dataset created successfully")
